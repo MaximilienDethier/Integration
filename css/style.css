@@ -750,7 +750,7 @@ font-size:22px;
 margin-bottom:5px;
 }
 
-#randomStories img
+#randomStories img, #listStories img
 {
 margin-bottom:5px;
 margin-top:2px;
@@ -769,17 +769,18 @@ font-size:18px;
 line-height:120%;
 }
 
-.middleInfo .author
+.author
 {
 font-size:18px;
 margin-bottom:11px;
 }
 
-.rightInfo li
+.rightInfo li, .tagTitle+ul li
 {
 display:inline-block;
 margin:5px;
 margin-left:0px;
+margin-right:7px;
 font-size:18px;
 }
 
@@ -828,7 +829,8 @@ background-color:#F0F0F0;
 
 .type
 {
-padding-top:3px;
+padding-top:4px;
+padding-bottom:3px;
 display:inline-block;
 width:68px;
 
@@ -842,6 +844,7 @@ top:25px;
 display:inline-block;
 margin-left:3px;
 position:relative;
+left:5px;
 background-image:url("../images/iconset.png");
 width:11px;
 height:14px;
@@ -850,6 +853,8 @@ background-position: 14px 20px;
 
 .Comic span
 {
+position:relative;
+left:2px;
 display:inline-block;
 margin-left:3px;
 background-image:url("../images/iconset.png");
@@ -858,5 +863,213 @@ height:12px;
 background-position: 28px 19px;
 }
 
+#listStories
+{
+margin-top:20px;
+}
+
+#listStories article
+{
+display:inline-block;
+vertical-align:top;
+position:relative;
+width:44%;
+padding:25px;
+}
+
+.smallInfo, .leftInfo
+{
+display:inline-block;
+vertical-align:top;
+}
+
+.smallInfo
+{
+margin-left:20px;
+max-width:255px;
+}
+
+#listStories h3
+{
+font-size:22px;
+}
+
+#listStories .author
+{
+margin-top:5px;
+}
+
+/* Your Stories */
+
+#yourStories #content
+{
+overflow:hidden;
+}
+
+#yourStories .type
+{
+top:17px;
+right:17px;
+}
+
+#storyByAuthor h2
+{
+margin-top:12px;
+margin-bottom:20px;
+}
+
+#aboutAuthor
+{
+background-color:#F0F0F0;
+padding:25px;
+padding-top:20px;
+width:45%;
+float:right;
+position:relative;
+}
+
+#aboutAuthor h2
+{
+margin-top:20px;
+margin-bottom:18px;
+}
+
+#content #h2Author
+{
+display:block;
+width:180px;
+margin-top:0px;
+padding-right:7px;
+margin-bottom:17px;
+}
+
+#leftInfoAuthor, #descriptionAuthor
+{
+display:inline-block;
+vertical-align:top;
+}
+
+#leftInfoAuthor
+{
+width:145px;
+margin-right:10px;
+font-size:18px;
+}
+
+	#leftInfoAuthor img
+	{
+	margin-top:3px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	}
+	
+	#leftInfoAuthor h3
+	{
+	font-weight:bold;
+	line-height:120%;
+	padding-top:6px;
+	}
+	
+	#leftInfoAuthor p
+	{
+	margin-bottom:9px;
+	}
+	
+	#leftInfoAuthor ul
+	{
+	margin-top:6px;
+	}
+	
+	#leftInfoAuthor li
+	{
+	font-size:18px;
+	margin-bottom:8px;
+	list-style-type: disc;
+	margin-left:15px;
+	}
+	
+	#descriptionAuthor
+	{
+	position:relative;
+	top:-2px;
+	font-size:18px;
+	line-height:122%;
+	}
+
+#descriptionAuthor
+{
+width:280px;
+}
+
+#aboutAuthor p
+{
+	font-size:18px;
+	line-height:122%;
+	margin-bottom:7px;
+}
+
+#storyByAuthor
+{
+margin-top:8px;
+width:48%;
+float:left;
+}
+
+	#storyByAuthor article
+	{
+	position:relative;
+	padding:20px;
+	}
+
+.topInfo img
+{
+float:left;
+margin-right:20px;
+margin-bottom:15px;
+}
+
+.tagTitle
+{
+font-size:18px;
+margin-top:16px;
+margin-bottom:5px;
+}
 
 
+.topInfo .genre
+{
+font-size:18px;
+margin-bottom:6px;
+}
+
+.topInfo p
+{
+font-size:17px;
+line-height:125%;
+}
+
+#storyByAuthor .topInfo h3
+{
+font-size:22px;
+position:relative;
+top:-3px;
+}
+
+#yourStories .descriptionStory
+{
+clear:both;
+}
+
+.profileTitle
+{
+font-weight:bold;
+}
+
+#aboutAuthor .edit
+{
+width:auto;
+text-align:center;
+padding:3px 16px;
+font-size:16px;
+}
