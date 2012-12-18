@@ -248,6 +248,7 @@ box-shadow:         0px 4px 19px rgba(50, 50, 50, 0.19);
 	{
 		margin-right:4%;
 		max-width:440px;
+		min-width:330px;
 		margin-top:20px;
 		line-height:125%;
 	}
@@ -262,8 +263,9 @@ box-shadow:         0px 4px 19px rgba(50, 50, 50, 0.19);
 	
 	#connexion
 	{
-		background-color:#f0f0f0;
+		background-color:#F3F3F3;
 		padding:20px;
+		min-width:360px;
 		position:relative;
 		float:right;
 		padding-bottom:15px;
@@ -280,9 +282,11 @@ box-shadow:         0px 4px 19px rgba(50, 50, 50, 0.19);
 	{
 		display:block;
 		width:75%;
+		min-width:250px;
+		
 		font-family:arial,sans-serif;
 		font-size:18px;
-		border:0px solid black;
+		border:1px solid white;
 		padding:8px;
 		margin-bottom:15px;
 		
@@ -313,6 +317,20 @@ box-shadow:         0px 4px 19px rgba(50, 50, 50, 0.19);
 		background: -ms-linear-gradient(top,  #7abcff 0%,#60abf8 57%,#4096ee 100%); /* IE10+ */
 		background: linear-gradient(to bottom,  #7abcff 0%,#60abf8 57%,#4096ee 100%); /* W3C */
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7abcff', endColorstr='#4096ee',GradientType=0 ); /* IE6-9 */
+	}
+	
+	input#logIn
+	{
+		min-width:160px;
+	}
+	
+	#connexion input:focus
+	{
+	border:1px solid rgb(52.8%,80.7%,100%);
+	color:#909090;
+	-webkit-box-shadow: 0px 0px 3px rgb(57.8%,83.7%,100%);
+	-moz-box-shadow:    0px 0px 3px rgb(57.8%,83.7%,100%);
+	box-shadow:         0px 0px 3px rgb(57.8%,83.7%,100%);
 	}
 	
 	#signUp
@@ -355,7 +373,9 @@ box-shadow:         0px 4px 19px rgba(50, 50, 50, 0.19);
 	
 		#firstSteps ol li
 		{
-			background-color:#f0f0f0;
+			background-color:#F3F3F3;
+			
+			background-image:url(../images/backSteps.png);
 			padding:20px;
 			width:44%;
 			height:180px;
@@ -367,6 +387,26 @@ box-shadow:         0px 4px 19px rgba(50, 50, 50, 0.19);
 			-moz-border-radius: 5px;
 			border-radius: 5px;
 		}
+		
+			#stepOne
+			{
+			background-position:0 0;
+			}
+		
+			#stepTwo
+			{
+			background-position:-505px 0;
+			}
+			
+			#stepThree
+			{
+			background-position:14px 220px;
+			}
+			
+			#stepFour
+			{
+			background-position:-445px 220px;
+			}
 		
 			#firstSteps ol li#stepOne, #firstSteps ol li#stepThree
 			{
@@ -400,39 +440,6 @@ box-shadow:         0px 4px 19px rgba(50, 50, 50, 0.19);
 	{
 		margin-left:75px;
 	}
-	
-	.iconStep
-	{
-		width:25px;
-		height:18px;
-		position:absolute;
-		top:21px;
-		left:300px;
-		background-image:url("../images/iconset.png");
-	}
-	
-		#stepTwo .iconStep
-		{
-			background-position:50px 0px;
-			width:20px;
-		}
-		
-		#stepThree .iconStep
-		{
-			background-position:0px 20px;
-			height:20px;
-			top:21px;
-			left:280px;
-		}
-
-		
-		#stepFour .iconStep
-		{
-			background-position:54px 22px;
-			height:22px;
-			top:19px;
-			left:185px;
-		}
 		
 	.ecusson
 	{
@@ -538,7 +545,7 @@ margin-bottom:14px;
 border-radius: 5px;
 }
 
-#logOff, .seeMore, .type
+#logOff, .seeMore, .type, .follow
 {
 text-decoration:none;
 position:relative;
@@ -565,7 +572,7 @@ background: linear-gradient(to bottom,  #7abcff 0%,#60abf8 57%,#4096ee 100%); /*
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7abcff', endColorstr='#4096ee',GradientType=0 ); /* IE6-9 */
 }
 
-	#logOff:hover, .seeMore:hover, .type:hover
+	#logOff:hover, .seeMore:hover, .type:hover, .follow:hover
 	{
 		text-decoration:none;
 		color:white;
@@ -615,7 +622,7 @@ top:-3px;
 
 #updates
 {
-background-color:#F0F0F0;
+background-color:#F3F3F3;
 margin-left:380px;
 padding:20px 0px;
 
@@ -780,7 +787,7 @@ margin-bottom:11px;
 display:inline-block;
 margin:5px;
 margin-left:0px;
-margin-right:7px;
+margin-right:9px;
 font-size:18px;
 }
 
@@ -824,7 +831,7 @@ vertical-align:top;
 
 .unevenStory
 {
-background-color:#F0F0F0;
+background-color:#F3F3F3;
 }
 
 .type
@@ -920,7 +927,7 @@ margin-bottom:20px;
 
 #aboutAuthor
 {
-background-color:#F0F0F0;
+background-color:#F3F3F3;
 padding:25px;
 padding-top:20px;
 width:45%;
@@ -1073,3 +1080,268 @@ text-align:center;
 padding:3px 16px;
 font-size:16px;
 }
+
+/* AddPage */
+
+#addPage
+{
+margin-top:10px;
+margin-bottom:30px;
+}
+
+	#addPage input, #addPage textarea
+	{
+		display:block;
+		width:95%;
+		font-family:arial,sans-serif;
+		font-size:17px;
+		border:1px solid #dddddd;
+		padding:5px;
+		margin-bottom:15px;
+		
+		color: #989898;
+		
+		-webkit-border-radius: 4px;
+		-moz-border-radius: 4px;
+		border-radius: 4px;
+	}
+	
+		#addPage input:focus
+		{
+		color:gray;
+		}
+	
+		#addPage #pageTitle
+		{
+		max-width:380px;
+		margin-bottom:20px;
+		}
+		
+		#addPage textarea:focus
+		{
+		color:grey;
+		}
+		
+			#addPage #tags
+			{
+			height:150px;
+			}
+			
+			#addPage #dialogues
+			{
+			height:294px;
+			}
+			
+			#addPage #description
+			{
+			height:200px;
+			margin-bottom:25px;
+			}
+		
+		.optional
+		{
+		color:gray;
+		font-size:17px;
+		font-style:italic;
+		margin-left:3px;
+		}
+		
+		#addPage  #uploadPage
+		{
+		border:0;
+		padding:0;
+		margin:5px;
+		margin-bottom:20px;
+		margin-left:0;
+		}
+
+	#addPage label
+	{
+	font-size:18px;
+	margin-bottom:5px;
+	display:block;
+	}
+	
+	#rightForm, #leftForm
+	{
+	vertical-align:top;
+	float:left;
+	width:37%;
+	}
+	
+		#rightForm
+		{
+		background-color:#F3F3F3;
+		padding:25px;
+		padding-bottom:15px;
+		position:relative;
+		top:-25px;
+		}
+		
+		#leftForm
+		{
+		width:56%;
+		margin-right:2%;
+		margin-bottom:10px;
+		}
+	
+	#addPage #submitPage
+	{
+	clear:both;
+	width:140px;
+	background: url('../images/backButton.png') #f1f1f1 no-repeat;
+	background-position:7px center;
+	padding:6px;
+	padding-left:35px;
+	padding-right:10px;
+	color:#5FB80D;
+	cursor:pointer;
+	}
+	
+		#addPage #submitPage:hover
+		{	
+		background: url('../images/backButton.png') #f6f6f6 no-repeat;
+		background-position:7px center;
+		color:#6ED40F;
+		}
+		
+	/*Histoire Exemple*/
+	
+	.floatStory
+	{
+	position:relative;
+	float:left;
+	width:550px;
+	margin-right:25px;
+	line-height:130%;
+	}
+	
+		.floatStory .type
+		{
+		top:0px;
+		}
+	
+		.floatStory+.floatStory
+		{
+		width:400px;
+		font-size:18px;
+		}
+			
+		.floatStory .seeMore
+		{
+		position:relative;
+		display:block;
+		width:160px;
+		padding:6px 15px;
+		left:0;
+		top:20px;
+		margin-bottom:40px;
+		}
+		
+		.floatStory .genreStory
+		{
+		margin:0;
+		margin-bottom:10px;
+		}
+		
+	.date
+	{
+	margin-right:15px;
+	font-size:17px;
+	}
+	
+	#summaryStory
+	{
+	width:95%;
+	margin-top:3px;
+	margin-bottom:23px;
+	font-size:18px;
+	}
+	
+		#summaryStory+a
+		{
+		width:150px;
+		}
+	
+	#tagStory li
+	{
+	display:inline-block;
+	font-size:18px;
+	margin-right: 28px;
+	margin-top:5px;
+	}
+	
+	.follow
+	{
+	display:inline-block;
+	padding:4px 15px;
+	position:absolute;
+	top:0;
+	right:125px;
+	}
+	
+	#tagTitle
+	{
+	margin-top:10px;
+	}
+	
+	.floatStory p
+	{
+	margin-bottom:10px;
+	}
+	
+	.heart
+	{
+		display:inline-block;
+		width:12px;
+		height:15px;
+		background-image:url("../images/iconset.png");
+		background-position:12px -2px;
+	}
+	
+	/*Media Queries*/
+	
+	@media only screen and (max-width : 1000px){
+
+	#firstSteps ol li
+	{
+	height:200px;
+	min-width:400px;
+	}
+	
+	#firstSteps h2
+	{
+	margin-top:30px;
+	}
+	
+	}
+	
+	@media only screen and (max-width : 930px){
+
+	#firstSteps ol li
+	{
+	float:left;
+	width:50%;
+	}
+	
+	
+	}
+	
+	@media only screen and (max-width : 850px){
+
+	#welcomeMessage
+	{
+	min-width:400px;
+	}
+	
+	#connexion
+	{
+	float:left;
+	top:25px;
+	width:420px;
+	left:-20px;
+	margin-bottom:20px;
+	}
+	
+	
+	}

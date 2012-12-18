@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>TheStoryCase - Home</title>
+	<link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+	<header>
+		<div id="backTop">
+			<div id="top">
+				<a href="home.html"><img src="../images/globeLogo.png" alt="The website's logo" title="TheStoryCase!" width="77" height="83"/>
+				<h1><span class="greyLetter">T</span>he<span class="greyLetter">S</span>tory<span class="greyLetter">C</span>ase</h1>
+				<h2>Create, Share, Follow</h2></a>
+				
+				<ul id="lastStories">
+					<li><a href="#"><img src="../images/webcomic1.png" width="140" height="90"/></a></li>
+					<li><a href="#"><img src="../images/webcomic2.png" width="140" height="90"/></a></li>
+					<li><a href="#"><img src="../images/webcomic3.png" width="140" height="90"/></a></li>
+				</ul>
+			</div>
+		</div>
+			
+		<div id="backNav">
+			<nav>
+				<a href="home.html">Home</a>
+				<a href="yourStories.html">Your Stories</a>
+				<a href="discover.html">Discover</a>
+				<a href="network.html" id="current">My Network</a>
+				
+				<input id="search" type="search" placeholder="Search by tag/by genre" />
+			</nav>
+		</div>
+			
+	</header>
+	
+	<div id="content">
+		<h2>Add a page to <a href="#" title="">Morenastuck</a></h2>
+		
+		<form id="addPage" action="#">
+			<div id="leftForm">
+				<label for="pageTitle">Title <span class="optional">(optional)</span></label><input id="pageTitle" type="text" />
+				<label for="uploadPage">Upload your page <span class="optional">(.png, .jpg, .gif or .fla)</span></label><input id="uploadPage" type="file" />
+				<label for="dialogues">Dialogues <span class="optional">(optional)</span></label><textarea placeholder="Insert the dialogues of the page" id="dialogues" cols="30" rows="10"></textarea>
+			</div>
+			<div id="rightForm">
+				<label for="description">Description <span class="optional">(optional)</span></label><textarea placeholder="Insert your description of the page" id="description" cols="30" rows="10"></textarea>
+				<label for="tags">Tags <span class="optional">(optional)</span></label><textarea placeholder="Insert your tags here and separate them with a comma" id="tags" cols="30" rows="10"></textarea>
+			</div>
+			<input id="submitPage" type="submit" value="Create page" />
+		</form>
+	</div>
+	
+	<footer>
+	</footer>
+	
+	<script src="../js/jquery.js"></script>
+	<script src="../js/script.js"></script>
+	
+</body>
+</html>
